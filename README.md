@@ -1,69 +1,84 @@
-# React + TypeScript + Vite
+# 📊 React Spreadsheet UI – Intern Assignment (Inscripts)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **static spreadsheet-style React UI** built as part of the Inscripts internship assignment.  
+Designed to be **pixel-perfect** as per the Figma and **responsive** across devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ React 18 + Vite
+- 🟦 TypeScript (Strict mode)
+- 🎨 Tailwind CSS
+- 🧮 Reusable Components (Avatar, Badge)
+- 🔍 Bonus: Real-time Search Filter
+- ✅ Lint + Type-Check setup
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📸 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- ✅ Pixel-perfect layout as per [Figma Design](https://www.figma.com/design/3nywpu5sz45RrCmwe68QZP/Intern-Design-Assigment)
+- ✅ Fully responsive (mobile + desktop)
+- ✅ Search bar with live filtering
+- ✅ Avatar initials & color-coded badges
+- ✅ Toolbar & tab UI with console logs
+- ✅ Clickable external links (URLs)
+- ✅ Clean component-based structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🧪 Getting Started
+
+```bash
+git clone https://github.com/Deewansinghrajputs/spreadsheet-UI
+cd react-spreadsheet-ui
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Scripts
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev         # Start dev server
+npm run build       # Build for production
+npm run lint        # Lint check
+npm run type-check  # TypeScript type check
 ```
+
+---
+
+## 🌐 Live Demo
+
+🔗 [Click here to view the live deployed site](https://spreadsheet-ui-navy.vercel.app)
+
+---
+
+## 📂 Folder Structure
+
+```
+src/
+├── components/
+│   ├── Avatar.tsx
+│   ├── Badge.tsx
+│   ├── Header.tsx
+│   ├── Toolbar.tsx
+│   └── SpreadsheetTable.tsx
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+---
+
+## 🤝 Author
+
+**Deewan Singh**  
+MERN Stack Developer • Passionate about Clean UI & Scalable Code  
+🌐 [LinkedIn] ( https://www.linkedin.com/in/deewan-singh-mewada-119762232/ )
+
+---
+
+✅ Made with ❤️ for Inscripts Internship Assignment
